@@ -1,0 +1,6 @@
+[submodule "lua/conch/deps/lua-ljsqlite3"]
+	path = lua/conch/deps/lua-ljsqlite3
+	url = https://github.com/stepelu/lua-ljsqlite3.git
+[submodule "lua/conch/deps/lua-xsys"]
+	path = lua/conch/deps/lua-xsys
+	url = https://github.com/stepelu/lua-xsys.git
