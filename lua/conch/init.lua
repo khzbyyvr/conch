@@ -1,6 +1,6 @@
 -- Imports the plugin's additional Lua modules.
-local fetch = require("example-plugin.fetch")
-local update = require("example-plugin.update")
+local fetch = require("conch.fetch")
+local update = require("conch.update")
 
 -- Creates an object for the module. All of the module's
 -- functions are associated with this object, which is
