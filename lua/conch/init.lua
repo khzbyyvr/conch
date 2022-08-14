@@ -10,6 +10,7 @@ local M = {}
 -- Routes calls made to this module to functions in the
 -- plugin's other modules.
 M.fetch_todos = fetch.fetch_todos
+M.create_todo = update.create_todo
 M.insert_todo = update.insert_todo
 M.complete_todo = update.complete_todo
 

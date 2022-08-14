@@ -4,6 +4,16 @@ local sqlite = require("ljsqlite3")
 -- Creates an object for the module.
 local M = {}
 
+
+function M.create_todo()
+    local db = sqlite.open("todo.db")
+    print("called function create")
+    db:exec("CREATE TABLE todo_list(id INTEGER PRIMARY KEY AUTOINCREMENT, description TEXT NOT NULL, completed TEXT DEFAULT 'No');")
+    db:exec("INSERT INTO todo_list(description) VALUES('Test connecting to SQLite via Lua.');")
+    db:close()
+end
+
+
 -- Inserts a new todo task, prompting the
 -- user to enter a description.
 function M.insert_todo()
